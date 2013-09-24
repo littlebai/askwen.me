@@ -19,14 +19,15 @@
 		<img src="images/bg-1.jpg" class="img-responsive" alt="responsive">
 	</div>
 
-	<div class="container">
-		
-		<div class="row">
-			<div class="col-md-5 col-md-offset-2" id="content">
-				<div id="hello" class="myfont"><p>Hello World</p></div>
- <!-- 主体内容 -->
-				
-<h1 name="home" id="home" class="myfont">Who am I</h1>
+<div class="container">
+<div class="row">
+			
+			
+<div class="col-md-5 col-md-offset-2" id="content">
+
+<div id="hello"><p>Hello World</p></div>
+<div class="container">				
+<h1 name="home" id="home" class="myfont">Who</h1>
 <p>I'm Lbai, 这是我的个人主页，喜好IT、折腾，业余码农一枚。</p>
 <p>远离了喧嚣的城市，可以让我面朝大海，春暖花开。</p>
 			
@@ -71,62 +72,66 @@
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 </div>
+</div>
 
+<div class="container">
 <h1 name="work" id="work" class="myfont">Work</h1>
-<div class="work-list">
-<img src="images/jsw.jpg" class="img-thumbnail" alt="jsw" >
-<p>政府网站, php+mysql, CRM</p>
-</div>
-<div class="work-list">
-<img src="images/minipin.jpg" class="img-thumbnail" alt="minipin" >
-<p>公司网站, php+mysql, CRM</p>
-</div>
-<div class="work-list">
-<img src="images/bus.jpg" class="img-thumbnail" alt="bus" >
-<p>车辆管理, ror+mysql, Web应用</p>
-</div>
-<div class="work-list">
-<img src="images/hotel.jpg" class="img-thumbnail" alt="hotel" >
-<p>酒店管理, python+mysql, CRM</p>
+	<div class="pull-left">
+	<img src="images/jsw.jpg" class="img-thumbnail" alt="jsw" >
+	<p class="text-center">政府网站, php+mysql, CRM</p>
+	</div>
+	<div class="pull-right">
+	<img src="images/minipin.jpg" class="img-thumbnail" alt="minipin" >
+	<p class="text-center">公司网站, php+mysql, CRM</p>
+	</div>
+	<div class="clearfix"></div>
+	<div class="pull-left">
+	<img src="images/bus.jpg" class="img-thumbnail" alt="bus" >
+	<p class="text-center">车辆管理, ror+mysql, Web应用</p>
+	</div>
+	<div class="pull-right">
+	<img src="images/hotel.jpg" class="img-thumbnail" alt="hotel" >
+	<p class="text-center">酒店管理, python+mysql, CRM</p>
+	</div>
+	<div class="clearfix"></div>
+	<p>更多案例:<a> 我的网站(建设中)</a></p>
 </div>
 
 
-<div class="clearfix"></div>
-<p>更多案例:<a> 我的网站(建设中)</a></p>
-
+<div class="container">
 <h1 name="contact" id="contact" class="myfont">Contact</h1>
-
 </br>
-<ul id="ul-contact">
-	<li><a href="https://www.facebook.com/ty.xiaobai" target="_blank"><img src="images/facebook.png" class="reflection"></a></li>
-	<li><a href="https://twitter.com/littlebai1/" target="_blank"><img src="images/twitter.png" class="reflection"></a></li>
-	<li><a href="http://weibo.com/u/1955454391" target="_blank"><img src="images/weibo.png" class="reflection"></a></li>
-	<li><a href="http://www.douban.com/people/51366469/" target="_blank"><img src="images/douban.png" class="reflection"></a></li>
+<ul class="list-inline" id="sns">
+<li><a href="https://www.facebook.com/ty.xiaobai" target="_blank"><img src="images/facebook.png" class="reflection"></a></li>
+<li><a href="https://twitter.com/littlebai1/" target="_blank"><img src="images/twitter.png" class="reflection"></a></li>
+<li><a href="http://weibo.com/u/1955454391" target="_blank"><img src="images/weibo.png" class="reflection"></a></li>
+<li><a href="http://www.douban.com/people/51366469/" target="_blank"><img src="images/douban.png" class="reflection"></a></li>
 </ul>
+</br>
+<h2 class="text-center">ty.xiaobai@gmail.com</h2>
+</div>
 
-<div class="clearfix" id="code"> <h2>ty.xiaobai@gmail.com</h2> </div>
-
-
+<div class="container">
 <h1 name="about" id="about" class="myfont">About</h1>
 <p>本站使用了bootstrap，搭建在DigitalOcean上, 所有代码都可以在我的Github上下载到。</p>
 <p>请使用chrome观看本站。</p>
 
 <p>我的代码库: <a href="https://github.com/littlebai/" target="_blank">Github</a>, <a href="https://bitbucket.org/lbai/" target="_blank">Bitbucket</a></p>
 
-<p class="myfont">Copyright &copy; 2012-2013 Lbai. All Rights Reserved</p>
+<p>Copyright &copy; 2012-2013 Lbai. All Rights Reserved</p>
+</br>
+</div>
 
-			</div>
+</div><!-- end content -->
 
 
   <!-- 右侧导航 -->
 
 
 		<div class="col-md-2 col-md-offset-8" id="bg-menu">
-		
 			<img src="images/my.jpg" alt="my" class="img-circle" id="person-img">
-			
-			<div id="menu-bar">
-				<h1 class="myfont">I'm Lbai</h1>
+			<div class="text-center"><h1 class="myfont">I'm Lbai</h1></div>
+			</br>
 				<ul class="nav nav-pills nav-stacked">
 					<li class="active"><a href="#home">HOME</a></li>
 					<li><a href="#work">WORK</a></li>
@@ -134,13 +139,11 @@
 					<li><a href="#about">ABOUT</a></li>
 					<li><a href="http://blog.askwen.me">BLOG</a></li>
 				</ul>
-				<br/>
-				<br/>
-			<div>
+			</br>
+		</div>	<!-- end bg-menu -->
 
-
-		</div>		
-	</div>
+</div> <!-- end row -->
+</div> <!-- end container -->
 		
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
