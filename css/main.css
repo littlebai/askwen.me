@@ -38,10 +38,6 @@ body {
 	-webkit-box-reflect: below -30px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.5, transparent), to(rgba(3,3,3,.2)));
 }
 
-#sns {
-	text-align: center;
-}
-
 .reflection {
 	-webkit-box-reflect: below 1px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.5, transparent), to(rgba(3,3,3,.2)));
 	width: 80px; 
