@@ -75,22 +75,22 @@
 </div>
 
 <div class="container">
-<h1 name="work" id="work" class="myfont">Work</h1>
+    <h1 name="work" id="work" class="myfont">Work</h1>
 	<div class="pull-left">
-	<img src="images/jsw.jpg" class="img-thumbnail" alt="jsw" >
+	<a href="http://www.dsrkjsj.com" target="_blank"><img src="images/jsw.jpg" class="img-thumbnail" alt="jsw" ></a>
 	<p class="text-center">政府网站, php+mysql, CRM</p>
 	</div>
 	<div class="pull-right">
-	<img src="images/minipin.jpg" class="img-thumbnail" alt="minipin" >
+	<a href="http://minipin.askwen.me" target="_blank"><img src="images/minipin.jpg" class="img-thumbnail" alt="minipin" ></a>
 	<p class="text-center">公司网站, php+mysql, CRM</p>
 	</div>
 	<div class="clearfix"></div>
 	<div class="pull-left">
-	<img src="images/bus.jpg" class="img-thumbnail" alt="bus" >
+	<a href="">	<img src="images/bus.jpg" class="img-thumbnail" alt="bus" rel="popover" data-content="内网系统"></a>
 	<p class="text-center">车辆管理, ror+mysql, Web应用</p>
 	</div>
 	<div class="pull-right">
-	<img src="images/hotel.jpg" class="img-thumbnail" alt="hotel" >
+	<a href="">	<img src="images/hotel.jpg" class="img-thumbnail" alt="hotel"></a>
 	<p class="text-center">酒店管理, python+mysql, CRM</p>
 	</div>
 	<div class="clearfix"></div>
@@ -102,10 +102,10 @@
 <h1 name="contact" id="contact" class="myfont">Contact</h1>
 </br>
 <ul class="list-inline" id="sns">
-<li><a href="https://www.facebook.com/ty.xiaobai" target="_blank"><img src="images/facebook.png" class="reflection"></a></li>
-<li><a href="https://twitter.com/littlebai1/" target="_blank"><img src="images/twitter.png" class="reflection"></a></li>
-<li><a href="http://weibo.com/u/1955454391" target="_blank"><img src="images/weibo.png" class="reflection"></a></li>
-<li><a href="http://www.douban.com/people/51366469/" target="_blank"><img src="images/douban.png" class="reflection"></a></li>
+<li><a href="https://www.facebook.com/ty.xiaobai" target="_blank"><img src="images/facebook.png" class="reflection" rel="popover" data-content="facebook"></a></li>
+<li><a href="https://twitter.com/littlebai1/" target="_blank"><img src="images/twitter.png" class="reflection" rel="popover" data-content="twitter"></a></li>
+<li><a href="http://weibo.com/u/1955454391" target="_blank"><img src="images/weibo.png" class="reflection" rel="popover" data-content="新浪微博"></a></li>
+<li><a href="http://www.douban.com/people/51366469/" target="_blank"><img src="images/douban.png" class="reflection" rel="popover" data-content="豆瓣"></a></li>
 </ul>
 </br>
 <h2 class="text-center">ty.xiaobai@gmail.com</h2>
@@ -152,5 +152,25 @@
     <script src="js/jquery-1.10.2.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+ 			$("img.img-thumbnail").hover(function(){
+				$(this).addClass("hover");
+				$(this).popover('show');
+			},function(){
+				$(this).removeClass("hover");
+				$(this).popover('hide');
+			});
+
+			$("img.reflection").hover(function(){
+				$(this).popover('show');
+			},function(){
+				$(this).popover('hide');
+			});
+
+		});
+	</script>
+
   </body>
 </html>
