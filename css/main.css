@@ -17,6 +17,11 @@ body {
 	border: 0; 
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 #person-img {
 	height:100%;
     width:100%;
@@ -26,6 +31,14 @@ body {
 #content {
 	background-color: #ffffff; 
 	opacity: 0.8;
+}
+
+#web-list {
+	text-align: center;
+}
+
+#web-sns {
+	text-align: center;
 }
 
 #hello {
